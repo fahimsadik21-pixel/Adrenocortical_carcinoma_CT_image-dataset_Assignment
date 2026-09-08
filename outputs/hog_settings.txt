@@ -1,0 +1,50 @@
+HOG FEATURE EXTRACTION SETTINGS
+================================================================================
+
+NOTE:
+The homework requires HOG feature extraction from an image directory and saving the values to a CSV file.
+The exact HOG parameter values were not specified in the provided homework slide.
+Therefore, the following parameters were selected as implementation settings.
+
+DATASET INFORMATION
+--------------------------------------------------------------------------------
+Dataset Path: E:\Computer vision\Projects\dataset
+Input Image Type: DICOM (.dcm)
+Image Data Used: Original 2D CT slices
+Segmentation DICOM series: Skipped
+Temporary ~$ files: Skipped
+Non-2D images: Skipped
+
+IMAGE PREPROCESSING SETTINGS
+--------------------------------------------------------------------------------
+Pixel normalization: 0 to 255
+Resize Width: 128 pixels
+Resize Height: 128 pixels
+Image Mode: 2D grayscale
+
+HOG PARAMETERS
+--------------------------------------------------------------------------------
+Orientations: 9
+Pixels Per Cell: 16 x 16
+Cells Per Block: 2 x 2
+Block Normalization: L2-Hys
+Transform Sqrt: False
+Feature Vector: True
+Visualization: False
+Channel Axis: None
+
+FEATURE OUTPUT
+--------------------------------------------------------------------------------
+HOG Features Per Image: 1764
+Successfully Processed Images: 1877
+Skipped Segmentation Files: 9
+Skipped Temporary Files: 1
+Skipped Non-2D Files: 0
+Failed Files: 0
+Total CSV Rows: 1877
+
+OUTPUT FILES
+--------------------------------------------------------------------------------
+HOG CSV: E:\Computer vision\Projects\outputs\hog_features.csv
+Settings File: E:\Computer vision\Projects\outputs\hog_settings.txt
+Error Log: E:\Computer vision\Projects\outputs\hog_failed_files.txt

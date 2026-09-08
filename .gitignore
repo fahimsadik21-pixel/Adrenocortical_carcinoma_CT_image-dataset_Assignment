@@ -1,0 +1,18 @@
+# Dataset files
+dataset/
+data/
+*.dcm
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code local settings
+.vscode/
+# Large generated output
+outputs/hog_features.csv
