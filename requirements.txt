@@ -1,0 +1,12 @@
+# Python 3.12-compatible environment for feature extraction and ANN experiments
+numpy>=1.26,<2.1
+pandas>=2.1,<3
+scipy>=1.11,<2
+scikit-image>=0.22,<0.26
+scikit-learn>=1.4,<2
+Pillow>=10,<12
+pydicom>=2.4,<3
+matplotlib>=3.8,<4
+openpyxl>=3.1,<4
+tensorflow>=2.16,<2.21
+opencv-python>=4.8,<5

@@ -1,4 +1,6 @@
 import os
+from pathlib import Path
+
 import pydicom
 import numpy as np
 import pandas as pd
@@ -9,8 +11,9 @@ from skimage.feature import graycomatrix, graycoprops
 # 1. PATH SETTINGS
 # ==================================================
 
-DATASET_PATH = r"E:\Computer vision\Projects\dataset"
-OUTPUT_FOLDER = r"E:\Computer vision\Projects\outputs"
+PROJECT_ROOT = Path(__file__).resolve().parent
+DATASET_PATH = PROJECT_ROOT / "dataset"
+OUTPUT_FOLDER = PROJECT_ROOT / "outputs"
 
 OUTPUT_CSV = os.path.join(
     OUTPUT_FOLDER,

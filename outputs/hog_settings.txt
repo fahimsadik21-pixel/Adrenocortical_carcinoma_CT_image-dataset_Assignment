@@ -36,12 +36,12 @@ Channel Axis: None
 FEATURE OUTPUT
 --------------------------------------------------------------------------------
 HOG Features Per Image: 1764
-Successfully Processed Images: 1877
-Skipped Segmentation Files: 9
+Successfully Processed Images: 4136
+Skipped Segmentation Files: 15
 Skipped Temporary Files: 1
 Skipped Non-2D Files: 0
 Failed Files: 0
-Total CSV Rows: 1877
+Total CSV Rows: 4136
 
 OUTPUT FILES
 --------------------------------------------------------------------------------

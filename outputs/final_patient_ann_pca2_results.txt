@@ -1,0 +1,35 @@
+FINAL PCA=2 PATIENT-LEVEL ANN RESULTS
+================================================================================
+
+Total Patients: 15
+Low Ki67 Patients: 8
+High Ki67 Patients: 7
+Original Patient-Level Features: 1789
+PCA Components: 2
+Cross Validation: 5-Fold Stratified
+
+Fold 1 Accuracy: 0.6667
+Fold 2 Accuracy: 0.6667
+Fold 3 Accuracy: 1.0000
+Fold 4 Accuracy: 1.0000
+Fold 5 Accuracy: 0.6667
+
+Mean 5-Fold Accuracy: 0.8000
+Mean 5-Fold Accuracy (%): 80.00%
+Accuracy Standard Deviation: 0.1633
+Overall Patient Accuracy: 0.8000
+Overall Patient Accuracy (%): 80.00%
+
+Confusion Matrix:
+[[7 1]
+ [2 5]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.7778    0.8750    0.8235         8
+           1     0.8333    0.7143    0.7692         7
+
+    accuracy                         0.8000        15
+   macro avg     0.8056    0.7946    0.7964        15
+weighted avg     0.8037    0.8000    0.7982        15

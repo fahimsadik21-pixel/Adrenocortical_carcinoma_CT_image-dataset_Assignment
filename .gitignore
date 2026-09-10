@@ -1,18 +1,58 @@
-# Dataset files
+# Raw dataset and clinical source files (keep local; do not redistribute)
 dataset/
 data/
+raw/
+clinical_data/
 *.dcm
+*.dicom
+*.zip
 
-# Python virtual environments
+# Python environments and caches
 venv/
+venv312/
 .venv/
 env/
-
-# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
 
-# VS Code local settings
+# Local editor and machine-specific files
 .vscode/
-# Large generated output
-outputs/hog_features.csv
+.idea/
+*.code-workspace
+*.log
+
+# Temporary work and generated scratch files
+work/
+tmp/
+temp/
+*.tmp
+*.temp
+~$*
+
+# Large/unnecessary model checkpoints
+checkpoints/
+*.keras
+*.h5
+*.ckpt
+
+# Generated outputs: only the compact, submission-relevant artifacts below
+# are intended to be versioned.
+outputs/*
+!outputs/glcm_features_45_degree.csv
+!outputs/glcm_failed_files.txt
+!outputs/hog_failed_files.txt
+!outputs/hog_settings.txt
+!outputs/final_patient_level_combined_features.csv
+!outputs/final_patient_ann_pca2_predictions.csv
+!outputs/final_patient_ann_pca2_results.txt
+
+# Local exploratory/legacy scripts retained outside the clean submission
+ann_train.py
+check_*.py
+create_labels.py
+evaluate_patient_level.py
+train_ann*.py
+tune_patient_ann.py
